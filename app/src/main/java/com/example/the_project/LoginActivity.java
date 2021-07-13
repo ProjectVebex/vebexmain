@@ -3,20 +3,17 @@ package com.example.the_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
-import android.view.View;
 
 import com.example.the_project.databinding.ActivityLoginBinding;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
-    FirebaseAuth auth;
     static boolean flag = false;
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -25,14 +22,8 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        auth = FirebaseAuth.getInstance();
+        binding.IdLoginButton.setOnClickListener(v -> {
 
-        binding.IdLoginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth.createUserWithEmailAndPassword(binding.IdEmail.getText().toString(),
-                        binding.IdPassword.getText().toString());
-            }
         });
 
         binding.IdPassword.setOnTouchListener((v, event) -> {
@@ -55,6 +46,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
             return false;
+        });
+
+
+        binding.createUserText.setOnClickListener(v ->{
+           startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
         });
     }
 }

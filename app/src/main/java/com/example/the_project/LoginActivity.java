@@ -1,29 +1,53 @@
 package com.example.the_project;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.InputType;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
 
 import com.example.the_project.databinding.ActivityLoginBinding;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
     static boolean flag = false;
+    FirebaseAuth auth;
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        auth = FirebaseAuth.getInstance();
 
         binding.IdLoginButton.setOnClickListener(v -> {
-
+            if(binding.IdEmail.getText().toString().equals("")){
+                binding.IdEmail.setError("Enter email");
+                return;
+            }
+            if(binding.IdPassword.getText().toString().equals("")){
+                binding.IdPassword.setError("Enter Password");
+                return;
+            }
+            auth.signInWithEmailAndPassword(binding.IdEmail.getText().toString() ,
+                    binding.IdPassword.getText().toString()).
+                    addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if(task.isSuccessful()) {
+                                startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+                            }
+                        }
+                    });
         });
 
         binding.IdPassword.setOnTouchListener((v, event) -> {

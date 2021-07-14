@@ -3,6 +3,7 @@ package com.example.the_project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.text.method.HideReturnsTransformationMethod;
@@ -45,6 +46,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
             return false;
+        });
+
+
+        binding.createUserText.setOnClickListener(v ->{
+           startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
         });
     }
 }

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    android:background="@color/black">
+
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chatbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="CHATTING"
+            />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/quizbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="QUIZ"/>
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/assignbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="ASSIGNMENT"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/performbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="PERFORMANCE"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/noticebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="NOTICE"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/notesbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="NOTES"/>
+
+    </LinearLayout>
+</RelativeLayout>

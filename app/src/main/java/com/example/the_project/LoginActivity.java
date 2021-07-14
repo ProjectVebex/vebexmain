@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
@@ -20,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     ActivityLoginBinding binding;
     static boolean flag = false;
     FirebaseAuth auth;
+    ProgressDialog progressDialog;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -29,13 +31,20 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         auth = FirebaseAuth.getInstance();
 
+        progressDialog = new ProgressDialog(LoginActivity.this);
+        progressDialog.setTitle("Login");
+        progressDialog.setMessage("Login to your account");
+
         binding.IdLoginButton.setOnClickListener(v -> {
+            progressDialog.show();
             if(binding.IdEmail.getText().toString().equals("")){
                 binding.IdEmail.setError("Enter email");
+                progressDialog.hide();
                 return;
             }
             if(binding.IdPassword.getText().toString().equals("")){
                 binding.IdPassword.setError("Enter Password");
+                progressDialog.hide();
                 return;
             }
             auth.signInWithEmailAndPassword(binding.IdEmail.getText().toString() ,
@@ -44,6 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()) {
+                                progressDialog.hide();
                                 startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                             }
                         }
@@ -55,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
             if(event.getAction() == MotionEvent.ACTION_UP) {
                 if(event.getRawX() >= (binding.IdPassword.getRight() -
                         binding.IdPassword.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width())){
-                    if(flag) {
+                    if(!flag) {
                         binding.IdPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                         binding.IdPassword.setCompoundDrawablesWithIntrinsicBounds(0,0,
                                 R.drawable.ic_hide_password,0);

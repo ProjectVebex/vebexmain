@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.The_Project">
-        <activity android:name=".NoticeActivity"></activity>
+        <activity android:name=".PerformanceTeacherActivity"></activity>
+        <activity android:name=".QuizTeacherActivity" />
+        <activity android:name=".AssignmentTeacherActivity" />
+        <activity android:name=".NoticeTeacherActivity" />
+        <activity android:name=".NotesTeacherActivity" />
+        <activity android:name=".ChattingTeacherActivity" />
+        <activity android:name=".HomeTeacherActivity" />
+        <activity android:name=".NoticeActivity" />
         <activity android:name=".PerformanceActivity" />
         <activity android:name=".AssignmentActivity" />
         <activity android:name=".QuizActivity" />

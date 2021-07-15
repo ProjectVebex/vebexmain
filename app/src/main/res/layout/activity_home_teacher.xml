@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity"
+    tools:context=".HomeTeacherActivity"
     android:background="@color/black">
-
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -20,7 +19,7 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="@dimen/_70sdp"
             android:layout_weight="1"
             android:gravity="center"

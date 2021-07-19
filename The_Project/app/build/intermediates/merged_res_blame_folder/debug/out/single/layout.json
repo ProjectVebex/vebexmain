@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chatting.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_chatting.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_quiz.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_quiz.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notes_upload.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_notes_upload.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notice.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_notice.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sample_notes_upload.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\sample_notes_upload.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sample_notes_row.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\sample_notes_row.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notes.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_notes.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chatting_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_chatting_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sample_notes_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\sample_notes_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_assignment.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_assignment.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\sample_quiz_object.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\sample_quiz_object.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_home_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_home_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_performance.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_performance.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notes_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_notes_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_quiz_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_quiz_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_assignment_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_assignment_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notice_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_notice_teacher.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_setting.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "D:\\The_Project\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_performance_teacher.xml",
+        "source": "D:\\The_Project\\app\\src\\main\\res\\layout\\activity_performance_teacher.xml"
+    }
+]
